@@ -50,6 +50,8 @@ input:checked{
 #resultado{
     text-align: center;
     margin: 15px;
+    background-color: white;
+    border-radius: 10px;
 }
 
 
