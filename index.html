@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/responsivo.css">
+    <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+    <title>H&C</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo-img">
+            <img class="header-img" src="imagem/hc-200.png" alt="logo da empresa">
+        </div>
+        <div id="nav">
+            <button id="btn-mobile"><span id="hamb"></span></button>
+            <ul class="header-ul">
+                <li><a class="nav-link" href="index.html">Inicio</a></li>
+                <li><a class="nav-link" href="imc.html">Seu IMC</a></li>
+                <li><a class="nav-link" href="consult.html">Consultoria</a></li>
+                <li><a class="nav-link" href="food.html">Alimentação</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="main">
+        <section>
+            <div id="slogan">
+                <img class="slogan-img" src="imagem/hc-slogan.png" alt="logo e slogan da empresa">
+                <p></p>
+            </div>
+        </section>
+        <section id="us">
+            <h2>Sobre nós</h2>
+            <p>A Health & Care Consultories é uma empresa especializada no desenvolvimento de pessoas de qualquer idade
+                com total foco no Bem estar físico, na saúde e na educação alimentar.</p>
+            <p>Através de um leque de serviços personalizados, oferecemos capacitações, palestras, workshops.</p>
+            <p>Com uma equipe altamente capacitada e multidisciplinar, focando sempre na aplicação imediata e relevância
+                dos conceitos.</p>
+            <p>Atendemos todos tipos de pessoas que estejam dispostas a mudar de vida, mudar a sí mesmo, sua auto
+                estima, e a vida a sua volta.</p>
+            <p>
+                Aqui você terá, e saberá sobre reeducação alimentar, ganhará conhecimento para colocar em pratica no que
+                for preciso, sobre exercicios, e muito mais...
+            </p>
+        </section>
+        <section id="form">
+            <h2>Preencha com seus dados</h2>
+            <form id="cadastro" method="post" action="#">
+                <div class="div-form">
+                    <label class="name-label" for="name">Nome</label>
+                    <input type="text" name="name" id="name" placeholder="Informe seu nome" required />
+                </div>
+                <div class="div-form">
+                    <label class="data-nasc" for="date">Data Aniversario</label>
+                    <input type="date" name="date" id="data" required />
+                </div>
+                <div class="div-form">
+                    <label class="email-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Informe seu email" required />
+                </div>
+                <div class="div-form">
+                    <label class="address" for="address">Cidade</label>
+                    <input type="address" name="address" id="address" placeholder="Informe sua cidade" required />
+                </div>
+                <div class="div-form">
+                    <label class="phone-label" for="phone">Telefone</label>
+                    <input type="tel" name="phone" id="phone" placeholder="(00)00000-0000" required />
+                </div>
+                <div class="div-form">
+                    <label class="goal-label" for="goal">Objetivo</label>
+                    <input type="text" name="goal" id="goal" placeholder="Informe seu objetivo" required />
+                </div>
+                <div>
+                    <input type="submit" name="button" id="btn-form" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <div id="footer">
+            <div class="about-us">
+                <h3>About Us</h3>
+                <p>Consultoria especializada no Bem estar Físico, Mental e Alimenticio.</p>
+            </div>
+            <div>
+                <h3>Address</h3>
+                <p>Rua Dom Pedro, 2000</p>
+                <h3>Email</h3>
+                <p>contact@hcconsultoria.com</p>
+            </div>
+            <div>
+                <nav>
+                    <h3>Social Midias</h3>
+                    <ul class="redes">
+                        <li class="img-footer"><a href="https://www.instagram.com/" target="_blank"><img
+                                    src="imagem/instagram.png" alt="instagram"></a></li>
+                        <li class="img-footer"><a href="https://www.whatsapp.com/" target="_blank"><img
+                                    src="imagem/whatsapp.png" alt="whatsapp"></a></li>
+                        <li class="img-footer"><a href="https://www.facebook.com/" target="_blank"><img
+                                    src="imagem/facebook.png" alt="facebook"></a></li>
+                        <li class="img-footer"><a href="https://www.twitter.com/" target="_blank"><img
+                                    src="imagem/twitter.png" alt="facebook"></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+        <span id="span">&copy;All Rights reserverds</span>
+    </footer>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

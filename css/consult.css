@@ -1,0 +1,107 @@
+#text-consult{
+    margin-top: 90px;
+    padding: 4rem;
+}
+#text-consult ul li{
+    list-style: none;
+    padding-top: 8px;
+}
+#consult{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 30px;
+}
+form{
+    padding: 3rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 1px solid rgb(91, 118, 184);
+    width: 350px;
+}
+#form-consult div{
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-left: 5px;
+}
+input{
+    border-radius: 10px;
+    border: 1px solid rgb(91, 118, 184);
+    height: 1.7rem;
+    padding: 5px;
+}
+#lista{
+    display: grid;
+    justify-self: center;
+    grid-template-columns: repeat(5, 1fr); 
+    padding: 1rem;  
+}
+#lista h3{
+    text-align:center;
+    padding: 5px;
+}
+#lista p{
+    padding: 5px;
+}
+#lista li{
+    background-color: rgba(45, 71, 83, 0.726);
+    border: 1px solid rgb(191 211 220);
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+#lista a{
+    background-color: rgba(191, 215, 226, 0.87);
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+#lista span{
+    text-align: center;
+    padding: 10px;
+}
+div .btn-list{
+    border-radius: 15px;
+    border: none;
+    height: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.075), 0 6px 6px rgba(0,0,0,0.075);
+}
+.tot-cards{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/*      Media Query      */
+@media (max-width: 1100px){
+    #lista{
+        grid-template-columns: repeat(4, 1fr); 
+    }
+}
+@media (max-width: 930px){
+    #lista{
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+@media (max-width: 680px){
+    #lista{
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+@media (max-width: 530px){
+    #lista{
+        grid-template-columns: repeat( 1, 1fr);
+    }
+    #form-consult{
+        width: 280px;
+    }
+}

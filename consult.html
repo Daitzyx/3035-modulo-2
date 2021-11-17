@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/consult.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+  <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+  <title>H&C</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="logo-img">
+      <img class="header-img" src="imagem/hc-200.png" alt="logo da empresa">
+    </div>
+    <div id="nav">
+      <button id="btn-mobile"><span id="hamb"></span></button>
+      <ul class="header-ul">
+        <li><a class="nav-link" href="index.html">Inicio</a></li>
+        <li><a class="nav-link" href="imc.html">Seu IMC</a></li>
+        <li><a class="nav-link" href="consult.html">Consultoria</a></li>
+        <li><a class="nav-link" href="food.html">Alimentação</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="text-consult">
+    <h2>Sobre a Consultoria</h2>
+    <ul>
+      <li>
+        <p>A Consultoria serve para você que quer começar uma nova rotina mas não sabe por onde começar.</p>
+      </li>
+      <li>
+        <p>Com o cadastro da sua consultoria você tem em suas mãos sempre que precisar, para acessar seus planos e
+          objetivos.</p>
+      </li>
+      <li>
+        <p>Com a Consultoriada da H&C você terá a disposição sempre que precisar de nossos profissionais, totalmente
+          preparados e prontos para lhe ajudar.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="consult">
+    <h2>Consutoria</h1>
+      <form id="form-consult">
+        <div>
+          <label>Titulo</label>
+          <input type="text" name="text" id="titulo" maxlength="25" placeholder="Projeto Verão"  required>
+        </div>
+        <div>
+          <label>Meta</label>
+          <input type="text" name="text" id="meta" maxlength="80" placeholder="Perder 10kg" required>
+        </div>
+        <div>
+          <label>Conteúdo</label>
+          <input type="text" name="text" id="cont" maxlength="80" placeholder="Caminhar 30 min 3x na semana, academia." required>
+        </div>
+        <div>
+          <button type="submit" class="btn-list">Enviar
+          </button>
+        </div>
+        <div class="tot-cards">
+          <p>Cards criado: <span id="total">0</span></p>
+        </div>
+      </form>
+
+      <ul id="lista">
+      </ul>
+
+  </section>
+
+  <footer>
+    <div id="footer">
+      <div class="about-us">
+        <h3>About Us</h3>
+        <p>Consultoria especializada no Bem estar Físico, Mental e Alimenticio.</p>
+      </div>
+      <div>
+        <h3>Address</h3>
+        <p>Rua Dom Pedro, 2000</p>
+        <h3>Email</h3>
+        <p>contact@hcconsultoria.com</p>
+      </div>
+      <div>
+        <nav>
+          <h3>Social Midias</h3>
+          <ul class="redes">
+            <li class="img-footer"><a href="https://www.instagram.com/" target="_blank"><img src="imagem/instagram.png"
+                  alt="instagram"></a></li>
+            <li class="img-footer"><a href="https://www.whatsapp.com/" target="_blank"><img src="imagem/whatsapp.png"
+                  alt="whatsapp"></a></li>
+            <li class="img-footer"><a href="https://www.facebook.com/" target="_blank"><img src="imagem/facebook.png"
+                  alt="facebook"></a></li>
+            <li class="img-footer"><a href="https://www.twitter.com/" target="_blank"><img src="imagem/twitter.png"
+                  alt="facebook"></a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+    <span id="span">&copy;All Rights reserverds</span>
+  </footer>
+  <script src="./js/script.js"></script>
+  
+</body>
+
+</html>

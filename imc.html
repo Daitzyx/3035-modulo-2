@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="css/imc.css">
+    <link rel="stylesheet" href="/css/responsivo.css">
+    <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+    <title>H&C</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo-img">
+            <img class="header-img" src="imagem/hc-200.png" alt="logo da empresa">
+        </div>
+        <div id="nav">
+            <button id="btn-mobile"><span id="hamb"></span></button>
+            <ul class="header-ul">
+                <li><a class="nav-link" href="index.html">Inicio</a></li>
+                <li><a class="nav-link" href="imc.html">Seu IMC</a></li>
+                <li><a class="nav-link" href="consult.html">Consultoria</a></li>
+                <li><a class="nav-link" href="food.html">Alimentação</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="main">
+        <!-- Colocar descrição e o que é o Calculo IMC -->
+        <div id="imc">
+            <h2>Calculo IMC</h2>
+            <ul>
+                <li>
+                    <p>A classificação do índice de massa corporal (IMC), pode ajudar a identificar obesidade ou
+                        desnutrição em crianças, adolescentes, adultos e idosos.</p>
+                </li>
+                <li>
+                    <p>O IMC é reconhecido como padrão internacional para avaliar o grau de sobrepeso e obesidade.</p>
+                </li>
+                <li>
+                    <p>É calculado dividindo o peso (em kg) pela altura ao quadrado (em metros).</p>
+                </li>
+                <li>
+                    <p>Formula do calculo: <strong>IMC = Peso ÷ (Altura × Altura)</strong></p>
+                </li>
+            </ul>
+        </div>
+        <form id="calc">
+            <div class="calc-style">
+                <!-- Colocar o calculo IMC a baixo -->
+                <div class="div-calc">
+                    <label>Altura <small>(ex.:1,70)</small></label>
+                    <input type="number"  id="height" value="" maxlength="2" placeholder="1,80" required>
+                </div>
+                <div class="div-calc">
+                    <label>Peso <small>(ex.:80)</small></label>
+                    <input type="number" id="weight" value="" placeholder="65" required>
+                </div>
+
+                <button type="submit" id="btn">Calcular</button>
+
+                <div class="calc-result" id="result"></div>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div id="footer">
+            <div class="about-us">
+                <h3>About Us</h3>
+                <p>Consultoria especializada no Bem estar Físico, Mental e Alimenticio.</p>
+            </div>
+            <div>
+                <h3>Address</h3>
+                <p>Rua Dom Pedro, 2000</p>
+                <h3>Email</h3>
+                <p>contact@hcconsultoria.com</p>
+            </div>
+            <div>
+                <nav>
+                    <h3>Social Midias</h3>
+                    <ul class="redes">
+                        <li class="img-footer"><a href="https://www.instagram.com/" target="_blank"><img
+                                    src="imagem/instagram.png" alt="instagram"></a></li>
+                        <li class="img-footer"><a href="https://www.whatsapp.com/" target="_blank"><img
+                                    src="imagem/whatsapp.png" alt="whatsapp"></a></li>
+                        <li class="img-footer"><a href="https://www.facebook.com/" target="_blank"><img
+                                    src="imagem/facebook.png" alt="facebook"></a></li>
+                        <li class="img-footer"><a href="https://www.twitter.com/" target="_blank"><img
+                                    src="imagem/twitter.png" alt="facebook"></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+        <span id="span">&copy;All Rights reserverds</span>
+    </footer>
+    <script src="./js/script.js"></script>
+    
+</body>
+
+</html>

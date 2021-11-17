@@ -1,0 +1,91 @@
+@media (max-width: 800px){
+    .header-ul{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: -30px;
+        background-color: rgba(255, 255, 255, 0.986);
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #main{
+        padding-left: 0;
+        padding-right: 0;
+        padding: 4px;
+        }
+    /* pega e abre o menu*/
+    #nav.active .header-ul {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    .header-ul a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+    .header-img{
+        width: 50px;
+        margin-left: 0;
+    }
+    .slogan-img{
+        width: 300px;
+        
+    }
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 5px;
+    }
+    #hamb{
+        border-top: 2px solid;
+        width: 20px;
+        display: block;
+    }
+    #hamb::after, #hamb::before{
+        content:'';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamb{
+        border-top-color: transparent;
+    }
+    #nav.active #hamb::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamb::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    /*  */
+    footer{
+        padding: 0;
+    }
+    #footer{
+        display: flex;
+        flex-direction: column;      
+    }
+    #footer div{
+        padding: 1rem;
+        border-bottom: 1px solid rgba(36, 194, 200, 0.486);
+    }
+    .about-us{
+        width: 100%;
+    }
+    #span{
+        margin: 20%;
+    }
+}

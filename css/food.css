@@ -1,0 +1,77 @@
+.food{
+    margin-top: 90px;
+    padding: 4rem;
+}
+.food h3{
+    margin-top: 15px;
+}
+#kcal{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    border-radius: 30px;
+    padding: 1rem;
+}
+label{
+    font-size: 1rem;
+}
+input{  
+    border: none;
+    padding: 0.25rem;
+}
+.preco{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#kcal > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+    background-color: white;
+    border-radius: 14px;
+    margin: 5px;
+    width: 450px;
+    height: 60px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+input:checked{
+    box-shadow: 0  5px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+#result{
+    text-align: center;
+    border-radius: 10px;
+    height: 30px;
+    border: 1px solid rgba(36, 194, 200, 0.883);
+}
+#resultado{
+    text-align: center;
+    margin: 15px;
+}
+
+
+@media (max-width: 940px){
+    #kcal{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        align-items: center;
+    }
+    #kcal > div{
+        width: 400px;
+    }
+    .food{
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 450px){
+    #kcal > div{
+        width: 280px;
+    }
+    .food{
+        padding: 1.25rem;
+    }
+}
